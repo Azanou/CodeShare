@@ -1,0 +1,332 @@
+/*START CSS for the Flash message*/
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #212836;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/*END CSS FOR THE Flash message*/
+
+/*LETS ME MANAGE THAT NAV-BAR*/
+
+.parent {
+  display: flex;
+  justify-content: space-around; /* Espacement égal entre les colonnes */
+  align-items: center;
+
+  background-color: #0f141d;
+  padding: 2px;
+}
+.nodeco{
+  text-decoration: none;
+  list-style-type:none;
+}
+
+.column {
+  flex: 0 1 auto;
+}
+
+.other_column {
+  display: flex;
+  flex-direction: row; /* Direction horizontale pour les éléments à l'intérieur des colonnes */
+  align-items: center; /* Centre les éléments verticalement s'ils ne prennent pas toute la hauteur */
+  gap:10px;
+}
+.flexgap{
+  display: flex;
+  align-items: center;
+  gap:8px;
+}
+
+/*IT'S END HERE */
+
+
+/*FOR PARSLEY*/
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+  color: #468847;
+  background-color: #DFF0D8;
+  border: 1px solid #D6E9C6;
+}
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+  color: #B94A48;
+  background-color: #F2DEDE;
+  border: 1px solid #EED3D7;
+}
+
+.parsley-errors-list {
+  margin: 2px 0 3px;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.9em;
+  line-height: 0.9em;
+  opacity: 0;
+  color: #B94A48;
+
+  transition: all .3s ease-in;
+  -o-transition: all .3s ease-in;
+  -moz-transition: all .3s ease-in;
+  -webkit-transition: all .3s ease-in;
+}
+
+.parsley-errors-list.filled {
+  opacity: 1;
+}
+
+/*PARSLEY CSS END HERE !!!*/
+
+
+
+/*CSS FOR THE SHARE_CODE VIEW*/
+#code {
+  width: 100%;
+  border: none;
+  background: black;
+  color: #c5c5c5;
+  min-height: 800px;
+  overflow-y: auto;
+  padding-left: 10px;
+  padding-top: 10px;
+
+}
+
+.btn-group {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#main-contain {
+  position: relative;
+
+}
+
+#main-contain1 {
+  position: relative;
+  text-align: left;
+}
+
+/*END CSS FOR THE SHARE_CODE VIEW*/
+
+
+
+
+/*DROPdown menu for the nav bar*/
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  max-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1ee;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #212836;
+  border-radius: 25px;
+}
+
+/*End DROPdown menu for the nav_bar*/
+
+
+
+/*------------
+
+CSS for the User_list View
+
+-----------*/
+
+.user {
+  margin-bottom: 3em;
+}
+
+.user-block {
+  text-align: center;
+}
+
+.user-block .avatar {
+  margin: auto;
+  color: white;
+}
+
+
+/*------------
+
+Small CSS for the messaage sending 
+
+-----------*/
+.status-post {
+  border: 1px solid #e3e3e3;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.status-post textarea {
+  border: none;
+  margin: auto;
+}
+
+.status-post textarea:focus {
+  box-shadow: none;
+}
+
+.status-post-submit {
+  border-top: 1px solid rgb(187, 184, 184);
+  padding: 0.5em 1em;
+  overflow: auto;
+}
+
+.status-post-submit .btn {
+  float: right;
+}
+
+/*------------
+
+Small CSS for the messaage already sent 
+
+-----------*/
+
+.article-container {
+  padding: 10px;
+  margin: 6px 0px;
+  background-color: #262c3a;
+  border-radius: 10px;
+  word-break: break-all;
+}
+
+.header {
+  display: flex;
+
+}
+
+.image {
+  width: 25px;
+  /* Adjust the size as needed */
+  height: 25px;
+  /* Adjust the size as needed */
+  margin-right: 10px;
+}
+
+.align-date-delete {
+  display: flex;
+  margin-inline-start: 30px;
+}
+
+
+
+.date {
+  color: gray;
+  /* Optional: to differentiate the date */
+  margin-inline-start: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.content {
+  margin-top: 10px;
+  margin-left: 35px;
+}
+
+.content p {
+  margin: 0;
+  text-align: left;
+}
+
+/*here's a small css for my notification bell !!!*/
+li.have-notifs>a {
+  color: rgb(30, 255, 0) !important;
+  font-weight: bold;
+}
+
+/* color to separate de seen notifications with thoses that aren't */
+.not_seen {
+  background-color: #f2f2f2;
+}
+
+.avatar-xs {
+  border-radius: 100%;
+  height: 50px;
+  width: 50px;
+}
+
+/* small css for tha hr  :)*/
+hr {
+  padding: 0px;
+  margin: 2px;
+}
+
+/*this is for the likes*/
+.like {
+  color: white;
+  text-decoration: none;
+}
+
+/* Designing that search bar*/
+
+.searchStyle {
+  text-align: left;
+  
+  margin-left: 20px;
+  z-index: 1000;
+}
+/* lets make that display-result feel pretty*/
+#display-results{
+  background-color: white;
+  color: black;
+  border-left: 1px solid #deddde;
+  border-right: 1px solid #deddde;
+  border-bottom: 1px solid #deddde;
+  position: fixed;
+  border-radius: 8px 8px 8px 8px;
+  display: none;
+  width: 277px;
+}
+.display-box-user{
+  border-radius: 8px 8px 8px 8px;
+  padding: 8px;
+  height:fit-content;
+  border-top: 1px solid #deddde;
+  z-index: 1000px;
+}
+.display-box-user:hover{
+  background-color: #3b5998;
+  color: #ffffff;
+  cursor:pointer;
+}
+.display-box-user a{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  display: block;
+  height:100%;
+}
